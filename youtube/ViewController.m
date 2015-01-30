@@ -33,6 +33,7 @@
     [self readRSS];
     [self addRefreshControl];
     
+    
 }
 
 - (void)didReceiveMemoryWarning {
