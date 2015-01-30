@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "YoutubeItem.h"
+
 @interface YoutubeCell : UITableViewCell
 
 
-
+- (void)loadImage:(NSURL *)url item:(YoutubeItem *)item;
 
 @end

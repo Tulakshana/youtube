@@ -39,4 +39,8 @@
         s = [s stringByReplacingCharactersInRange:r withString:@""];
     return s;
 }
+
+- (NSURL *)getThumbURL{
+    return [NSURL URLWithString:[NSString stringWithFormat:@"http://img.youtube.com/vi/%@/0.jpg",[self getVideoId]]];
+}
 @end

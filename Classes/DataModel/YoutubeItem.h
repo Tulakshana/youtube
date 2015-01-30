@@ -14,11 +14,12 @@
 @property (nonatomic,strong) NSString *title;
 @property (nonatomic,strong) NSString *desc;
 @property (nonatomic,strong) NSString *link;
-@property (nonatomic,strong) NSString *mediaLink;
+
 
 
 @property (nonatomic,strong) UIImage *thumb;
 
 - (NSString *)getVideoId;
 - (NSString *)descByStrippingHTML;
+- (NSURL *)getThumbURL;
 @end

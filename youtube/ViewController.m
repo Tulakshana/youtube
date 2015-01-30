@@ -11,7 +11,6 @@
 #import "TBXML.h"
 #import "TBXML+HTTP.h"
 #import "YoutubeCell.h"
-#import "YoutubeItem.h"
 #import "YoutubeDetailVC.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>{
@@ -68,7 +67,7 @@
     cell.textLabel.text = item.title;
     
     cell.detailTextLabel.text = item.pubDate;
-//    [cell loadImage:[NSURL URLWithString:item.mediaLink] item:item];
+    [cell loadImage:[item getThumbURL] item:item];
     return cell;
 }
 
@@ -175,6 +174,7 @@
         YoutubeDetailVC *vc = (YoutubeDetailVC *)[segue destinationViewController];
         YoutubeItem *item = [self.items objectAtIndex:[table indexPathForSelectedRow].row];
         vc.item = item;
+        [table deselectRowAtIndexPath:[table indexPathForSelectedRow] animated:TRUE];
     }
     
     
