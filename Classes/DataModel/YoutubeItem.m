@@ -17,4 +17,26 @@
     
     return videoId;
 }
+
+- (NSString *)getHTML{
+    NSString *htmlString = self.desc;
+    NSData *stringData = [htmlString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSDictionary *options = @{NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType};
+    NSAttributedString *decodedString;
+    decodedString = [[NSAttributedString alloc] initWithData:stringData
+                                                     options:options
+                                          documentAttributes:NULL
+                                                       error:NULL];
+    
+    return [decodedString string];
+}
+
+-(NSString *) descByStrippingHTML {
+    NSRange r;
+    NSString *s = [self getHTML];
+    while ((r = [s rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
+        s = [s stringByReplacingCharactersInRange:r withString:@""];
+    return s;
+}
 @end

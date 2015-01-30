@@ -20,4 +20,5 @@
 @property (nonatomic,strong) UIImage *thumb;
 
 - (NSString *)getVideoId;
+- (NSString *)descByStrippingHTML;
 @end

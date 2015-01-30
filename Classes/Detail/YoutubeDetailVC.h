@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "YoutubeItem.h"
+
 @interface YoutubeDetailVC : UIViewController
 
 
-@property (nonatomic,strong)NSString *videoId;
+@property (nonatomic,strong)YoutubeItem *item;
 
 @end

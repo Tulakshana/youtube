@@ -12,6 +12,8 @@
 
 @interface YoutubeDetailVC ()<UIWebViewDelegate>{
     IBOutlet UIWebView *wView;
+    IBOutlet UITextView *tView;
+    IBOutlet UILabel *lblTitle;
 }
 
 @end
@@ -22,7 +24,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    [wView loadYouTubeVideoID:self.videoId];
+    [wView loadYouTubeVideoID:[self.item getVideoId]];
+    [tView setText:[self.item descByStrippingHTML]];
+    lblTitle.text = self.item.title;
 }
 
 - (void)didReceiveMemoryWarning {

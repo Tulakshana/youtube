@@ -48,7 +48,7 @@
     NSString *html = [NSString stringWithFormat:htmlString,self.frame.size.width,self.frame.size.width,self.frame.size.height,videoID];
 
     //  #ifdef DEBUG
-    NSLog(@"YouTube Embed HTML:%@",html);
+//    NSLog(@"YouTube Embed HTML:%@",html);
     // #endif
     
     return html;     

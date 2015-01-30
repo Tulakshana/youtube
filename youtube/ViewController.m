@@ -174,8 +174,7 @@
     {
         YoutubeDetailVC *vc = (YoutubeDetailVC *)[segue destinationViewController];
         YoutubeItem *item = [self.items objectAtIndex:[table indexPathForSelectedRow].row];
-        vc.videoId = [item getVideoId];
-        
+        vc.item = item;
     }
     
     
