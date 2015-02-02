@@ -28,6 +28,8 @@
 		892993DB1A7B788100054688 /* YoutubeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993DA1A7B788100054688 /* YoutubeItem.m */; };
 		892993DF1A7B7A6000054688 /* YoutubeDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993DE1A7B7A6000054688 /* YoutubeDetailVC.m */; };
 		892993E31A7B82BB00054688 /* UIWebView+YouTube.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993E21A7B82BB00054688 /* UIWebView+YouTube.m */; };
+		899820341A7F353B008DBBBD /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 899820331A7F353B008DBBBD /* NSString+HTML.m */; };
+		899820371A7F365A008DBBBD /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 899820361A7F365A008DBBBD /* GTMNSString+HTML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		892993DE1A7B7A6000054688 /* YoutubeDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YoutubeDetailVC.m; path = Detail/YoutubeDetailVC.m; sourceTree = "<group>"; };
 		892993E11A7B82BB00054688 /* UIWebView+YouTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+YouTube.h"; sourceTree = "<group>"; };
 		892993E21A7B82BB00054688 /* UIWebView+YouTube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+YouTube.m"; sourceTree = "<group>"; };
+		899820321A7F353B008DBBBD /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		899820331A7F353B008DBBBD /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		899820351A7F365A008DBBBD /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		899820361A7F365A008DBBBD /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,7 @@
 		892993B41A7B73C700054688 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				899820311A7F353B008DBBBD /* HTML */,
 				892993DC1A7B7A3100054688 /* Detail */,
 				892993D81A7B785D00054688 /* DataModel */,
 				892993CF1A7B781900054688 /* Progress */,
@@ -264,6 +271,17 @@
 			);
 			name = UIWebView;
 			path = Detail/UIWebView;
+			sourceTree = "<group>";
+		};
+		899820311A7F353B008DBBBD /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				899820351A7F365A008DBBBD /* GTMNSString+HTML.h */,
+				899820361A7F365A008DBBBD /* GTMNSString+HTML.m */,
+				899820321A7F353B008DBBBD /* NSString+HTML.h */,
+				899820331A7F353B008DBBBD /* NSString+HTML.m */,
+			);
+			path = HTML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +390,7 @@
 				892993BE1A7B73C700054688 /* TBXML+Compression.m in Sources */,
 				892993CE1A7B763200054688 /* YoutubeCell.m in Sources */,
 				892993DB1A7B788100054688 /* YoutubeItem.m in Sources */,
+				899820341A7F353B008DBBBD /* NSString+HTML.m in Sources */,
 				892993E31A7B82BB00054688 /* UIWebView+YouTube.m in Sources */,
 				892993C01A7B73C700054688 /* TBXML.m in Sources */,
 				892993BF1A7B73C700054688 /* TBXML+HTTP.m in Sources */,
@@ -379,6 +398,7 @@
 				892993D71A7B781900054688 /* ProgressController.m in Sources */,
 				892993911A7B72EE00054688 /* main.m in Sources */,
 				892993D51A7B781900054688 /* ProgreeView.m in Sources */,
+				899820371A7F365A008DBBBD /* GTMNSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +591,7 @@
 				892993B01A7B72EE00054688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		892993B11A7B72EE00054688 /* Build configuration list for PBXNativeTarget "youtubeTests" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +600,7 @@
 				892993B31A7B72EE00054688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -26,7 +26,7 @@
 
     [wView loadYouTubeVideoID:[self.item getVideoId]];
     [tView setText:[self.item descByStrippingHTML]];
-    lblTitle.text = self.item.title;
+    lblTitle.text = [self.item getTitle];
 }
 
 - (void)didReceiveMemoryWarning {

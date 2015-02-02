@@ -22,4 +22,5 @@
 - (NSString *)getVideoId;
 - (NSString *)descByStrippingHTML;
 - (NSURL *)getThumbURL;
+- (NSString *)getTitle;
 @end

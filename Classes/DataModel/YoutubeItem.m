@@ -8,6 +8,8 @@
 
 #import "YoutubeItem.h"
 
+#import "NSString+HTML.h"
+
 @implementation YoutubeItem
 
 
@@ -22,7 +24,7 @@
     NSString *htmlString = self.desc;
     NSData *stringData = [htmlString dataUsingEncoding:NSUTF8StringEncoding];
     
-    NSDictionary *options = @{NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType};
+    NSDictionary *options = @{NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType,NSCharacterEncodingDocumentAttribute: [NSNumber numberWithInt:NSUTF8StringEncoding]};
     NSAttributedString *decodedString;
     decodedString = [[NSAttributedString alloc] initWithData:stringData
                                                      options:options
@@ -33,14 +35,21 @@
 }
 
 -(NSString *) descByStrippingHTML {
-    NSRange r;
+    
+//    NSRange r;
     NSString *s = [self getHTML];
-    while ((r = [s rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
-        s = [s stringByReplacingCharactersInRange:r withString:@""];
-    return s;
+//    while ((r = [s rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
+//        s = [s stringByReplacingCharactersInRange:r withString:@""];
+//    NSLog(@"%@",s);
+    
+    return [s stringByConvertingHTMLToPlainText];
 }
 
 - (NSURL *)getThumbURL{
     return [NSURL URLWithString:[NSString stringWithFormat:@"http://img.youtube.com/vi/%@/0.jpg",[self getVideoId]]];
+}
+
+- (NSString *)getTitle{
+    return [self.title stringByConvertingHTMLToPlainText];
 }
 @end

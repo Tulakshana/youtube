@@ -64,7 +64,7 @@
         cell.textLabel.numberOfLines = 4;
     }
     YoutubeItem *item = [self.items objectAtIndex:indexPath.row];
-    cell.textLabel.text = item.title;
+    cell.textLabel.text = [item getTitle];
     
     cell.detailTextLabel.text = item.pubDate;
     [cell loadImage:[item getThumbURL] item:item];
