@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>245839C0-1933-4961-A774-715B3159AE67</string>
+	<key>IDESourceControlProjectName</key>
+	<string>youtube</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>98D9CEED2F843C71A8463AE67057F9A01BFFD781</key>
+		<string>https://github.com/Tulakshana/youtube.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>youtube.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>98D9CEED2F843C71A8463AE67057F9A01BFFD781</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Tulakshana/youtube.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>98D9CEED2F843C71A8463AE67057F9A01BFFD781</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>98D9CEED2F843C71A8463AE67057F9A01BFFD781</string>
+			<key>IDESourceControlWCCName</key>
+			<string>youtube</string>
+		</dict>
+	</array>
+</dict>
+</plist>

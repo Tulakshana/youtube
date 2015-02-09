@@ -46,13 +46,13 @@
 
 #pragma mark - UIWebViewDelegate
 - (void)webViewDidStartLoad:(UIWebView *)webView{
-    [[ProgressController getSharedInstance]startProgress];
+    [MBProgressHUD showHUDAddedTo:webView animated:YES];
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
-    [[ProgressController getSharedInstance]endProgressIfVisible];
+    [MBProgressHUD hideAllHUDsForView:webView animated:YES];
 }
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
-    [[ProgressController getSharedInstance]endProgressIfVisible];
+    [MBProgressHUD hideAllHUDsForView:webView animated:YES];
 }
 
 @end

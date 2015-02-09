@@ -88,14 +88,17 @@
 
 - (void)readRSS{
     
-    
-    [self loadURL:@"http://gdata.youtube.com/feeds/base/users/ozharvest/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile"];
+//    NSString *urlString = @"https://gdata.youtube.com/feeds/api/users/ozharvest/uploads?v=2";
+    NSString *urlString = @"http://gdata.youtube.com/feeds/base/users/ozharvest/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile";
+    [self loadURL:urlString];
     
     
 }
 
 - (void)loadURL:(NSString *)url {
-
+    __weak typeof(self)weakSelf = self;
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     // Create a success block to be called when the asyn request completes
     TBXMLSuccessBlock successBlock = ^(TBXML *tbxmlDocument) {
@@ -105,17 +108,17 @@
         if (tbxmlDocument.rootXMLElement)
             [self traverseElement:tbxmlDocument.rootXMLElement];
         
-        [[ProgressController getSharedInstance] endProgressIfVisible];
+        [MBProgressHUD hideAllHUDsForView:weakSelf.view animated:YES];
         
     };
     
     // Create a failure block that gets called if something goes wrong
     TBXMLFailureBlock failureBlock = ^(TBXML *tbxmlDocument, NSError * error) {
         NSLog(@"Error! %@ %@", [error localizedDescription], [error userInfo]);
-        [[ProgressController getSharedInstance] endProgressIfVisible];
+        [MBProgressHUD hideAllHUDsForView:weakSelf.view animated:YES];
     };
     
-    [[ProgressController getSharedInstance] startProgress];
+    
     self.currentFeed = url;
     // Initialize TBXML with the URL of an XML doc. TBXML asynchronously loads and parses the file.
     TBXML *tbxml = [[TBXML alloc] initWithURL:[NSURL URLWithString:url]

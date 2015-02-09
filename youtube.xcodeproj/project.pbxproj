@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122696E0D5369A2A08806E86 /* libPods-youtube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D15751A8B7A77A646090063E /* libPods-youtube.a */; };
 		892993911A7B72EE00054688 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993901A7B72EE00054688 /* main.m */; };
 		892993941A7B72EE00054688 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993931A7B72EE00054688 /* AppDelegate.m */; };
 		892993971A7B72EE00054688 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993961A7B72EE00054688 /* ViewController.m */; };
@@ -14,17 +15,11 @@
 		8929939C1A7B72EE00054688 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8929939B1A7B72EE00054688 /* Images.xcassets */; };
 		8929939F1A7B72EE00054688 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8929939D1A7B72EE00054688 /* LaunchScreen.xib */; };
 		892993AB1A7B72EE00054688 /* youtubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993AA1A7B72EE00054688 /* youtubeTests.m */; };
-		892993BE1A7B73C700054688 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993B71A7B73C700054688 /* TBXML+Compression.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		892993BF1A7B73C700054688 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993B81A7B73C700054688 /* TBXML+HTTP.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		892993C01A7B73C700054688 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993B91A7B73C700054688 /* TBXML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		892993C21A7B73D400054688 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 892993C11A7B73D400054688 /* libz.dylib */; };
 		892993C51A7B73FB00054688 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892993C41A7B73FB00054688 /* Foundation.framework */; };
 		892993C71A7B740C00054688 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892993C61A7B740C00054688 /* UIKit.framework */; };
 		892993CA1A7B749000054688 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892993C91A7B749000054688 /* CoreData.framework */; };
 		892993CE1A7B763200054688 /* YoutubeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993CD1A7B763200054688 /* YoutubeCell.m */; };
-		892993D51A7B781900054688 /* ProgreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993D11A7B781900054688 /* ProgreeView.m */; };
-		892993D61A7B781900054688 /* ProgreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892993D21A7B781900054688 /* ProgreeView.xib */; };
-		892993D71A7B781900054688 /* ProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993D41A7B781900054688 /* ProgressController.m */; };
 		892993DB1A7B788100054688 /* YoutubeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993DA1A7B788100054688 /* YoutubeItem.m */; };
 		892993DF1A7B7A6000054688 /* YoutubeDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993DE1A7B7A6000054688 /* YoutubeDetailVC.m */; };
 		892993E31A7B82BB00054688 /* UIWebView+YouTube.m in Sources */ = {isa = PBXBuildFile; fileRef = 892993E21A7B82BB00054688 /* UIWebView+YouTube.m */; };
@@ -43,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15C9026B84C3399AB6237FA3 /* Pods-youtube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youtube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-youtube/Pods-youtube.debug.xcconfig"; sourceTree = "<group>"; };
 		8929938B1A7B72EE00054688 /* youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youtube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8929938F1A7B72EE00054688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		892993901A7B72EE00054688 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,12 +52,6 @@
 		892993A41A7B72EE00054688 /* youtubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = youtubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		892993A91A7B72EE00054688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		892993AA1A7B72EE00054688 /* youtubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = youtubeTests.m; sourceTree = "<group>"; };
-		892993B71A7B73C700054688 /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+Compression.m"; sourceTree = "<group>"; };
-		892993B81A7B73C700054688 /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+HTTP.m"; sourceTree = "<group>"; };
-		892993B91A7B73C700054688 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
-		892993BB1A7B73C700054688 /* TBXML+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+Compression.h"; sourceTree = "<group>"; };
-		892993BC1A7B73C700054688 /* TBXML+HTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+HTTP.h"; sourceTree = "<group>"; };
-		892993BD1A7B73C700054688 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
 		892993C11A7B73D400054688 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		892993C41A7B73FB00054688 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		892993C61A7B740C00054688 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -69,11 +59,6 @@
 		892993C91A7B749000054688 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		892993CC1A7B763200054688 /* YoutubeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YoutubeCell.h; path = Cell/YoutubeCell.h; sourceTree = "<group>"; };
 		892993CD1A7B763200054688 /* YoutubeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YoutubeCell.m; path = Cell/YoutubeCell.m; sourceTree = "<group>"; };
-		892993D01A7B781900054688 /* ProgreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgreeView.h; sourceTree = "<group>"; };
-		892993D11A7B781900054688 /* ProgreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgreeView.m; sourceTree = "<group>"; };
-		892993D21A7B781900054688 /* ProgreeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgreeView.xib; sourceTree = "<group>"; };
-		892993D31A7B781900054688 /* ProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressController.h; sourceTree = "<group>"; };
-		892993D41A7B781900054688 /* ProgressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressController.m; sourceTree = "<group>"; };
 		892993D91A7B788100054688 /* YoutubeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YoutubeItem.h; path = DataModel/YoutubeItem.h; sourceTree = "<group>"; };
 		892993DA1A7B788100054688 /* YoutubeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YoutubeItem.m; path = DataModel/YoutubeItem.m; sourceTree = "<group>"; };
 		892993DD1A7B7A6000054688 /* YoutubeDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YoutubeDetailVC.h; path = Detail/YoutubeDetailVC.h; sourceTree = "<group>"; };
@@ -84,6 +69,8 @@
 		899820331A7F353B008DBBBD /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
 		899820351A7F365A008DBBBD /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		899820361A7F365A008DBBBD /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		95C21C7CB031C692E35B6FF5 /* Pods-youtube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youtube.release.xcconfig"; path = "Pods/Target Support Files/Pods-youtube/Pods-youtube.release.xcconfig"; sourceTree = "<group>"; };
+		D15751A8B7A77A646090063E /* libPods-youtube.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-youtube.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +82,7 @@
 				892993C71A7B740C00054688 /* UIKit.framework in Frameworks */,
 				892993C51A7B73FB00054688 /* Foundation.framework in Frameworks */,
 				892993C21A7B73D400054688 /* libz.dylib in Frameworks */,
+				122696E0D5369A2A08806E86 /* libPods-youtube.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +104,7 @@
 				8929938D1A7B72EE00054688 /* youtube */,
 				892993A71A7B72EE00054688 /* youtubeTests */,
 				8929938C1A7B72EE00054688 /* Products */,
+				ADA2DF6E22C7CC5EBF92F778 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,40 +165,9 @@
 				899820311A7F353B008DBBBD /* HTML */,
 				892993DC1A7B7A3100054688 /* Detail */,
 				892993D81A7B785D00054688 /* DataModel */,
-				892993CF1A7B781900054688 /* Progress */,
 				892993CB1A7B75FF00054688 /* Cell */,
-				892993B51A7B73C700054688 /* XML */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		892993B51A7B73C700054688 /* XML */ = {
-			isa = PBXGroup;
-			children = (
-				892993B61A7B73C700054688 /* TBXML-Code */,
-				892993BA1A7B73C700054688 /* TBXML-Headers */,
-			);
-			path = XML;
-			sourceTree = "<group>";
-		};
-		892993B61A7B73C700054688 /* TBXML-Code */ = {
-			isa = PBXGroup;
-			children = (
-				892993B71A7B73C700054688 /* TBXML+Compression.m */,
-				892993B81A7B73C700054688 /* TBXML+HTTP.m */,
-				892993B91A7B73C700054688 /* TBXML.m */,
-			);
-			path = "TBXML-Code";
-			sourceTree = "<group>";
-		};
-		892993BA1A7B73C700054688 /* TBXML-Headers */ = {
-			isa = PBXGroup;
-			children = (
-				892993BB1A7B73C700054688 /* TBXML+Compression.h */,
-				892993BC1A7B73C700054688 /* TBXML+HTTP.h */,
-				892993BD1A7B73C700054688 /* TBXML.h */,
-			);
-			path = "TBXML-Headers";
 			sourceTree = "<group>";
 		};
 		892993C31A7B73DB00054688 /* Frameworks */ = {
@@ -219,6 +177,7 @@
 				892993C61A7B740C00054688 /* UIKit.framework */,
 				892993C41A7B73FB00054688 /* Foundation.framework */,
 				892993C11A7B73D400054688 /* libz.dylib */,
+				D15751A8B7A77A646090063E /* libPods-youtube.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -230,18 +189,6 @@
 				892993CD1A7B763200054688 /* YoutubeCell.m */,
 			);
 			name = Cell;
-			sourceTree = "<group>";
-		};
-		892993CF1A7B781900054688 /* Progress */ = {
-			isa = PBXGroup;
-			children = (
-				892993D01A7B781900054688 /* ProgreeView.h */,
-				892993D11A7B781900054688 /* ProgreeView.m */,
-				892993D21A7B781900054688 /* ProgreeView.xib */,
-				892993D31A7B781900054688 /* ProgressController.h */,
-				892993D41A7B781900054688 /* ProgressController.m */,
-			);
-			path = Progress;
 			sourceTree = "<group>";
 		};
 		892993D81A7B785D00054688 /* DataModel */ = {
@@ -284,6 +231,15 @@
 			path = HTML;
 			sourceTree = "<group>";
 		};
+		ADA2DF6E22C7CC5EBF92F778 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15C9026B84C3399AB6237FA3 /* Pods-youtube.debug.xcconfig */,
+				95C21C7CB031C692E35B6FF5 /* Pods-youtube.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 892993AE1A7B72EE00054688 /* Build configuration list for PBXNativeTarget "youtube" */;
 			buildPhases = (
+				A66E28EC9F37499816DC8E55 /* Check Pods Manifest.lock */,
 				892993871A7B72EE00054688 /* Sources */,
 				892993881A7B72EE00054688 /* Frameworks */,
 				892993891A7B72EE00054688 /* Resources */,
+				8488BD8C3A5B2DDD401F6ED1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -367,7 +325,6 @@
 				8929939A1A7B72EE00054688 /* Main.storyboard in Resources */,
 				8929939F1A7B72EE00054688 /* LaunchScreen.xib in Resources */,
 				8929939C1A7B72EE00054688 /* Images.xcassets in Resources */,
-				892993D61A7B781900054688 /* ProgreeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +337,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8488BD8C3A5B2DDD401F6ED1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-youtube/Pods-youtube-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A66E28EC9F37499816DC8E55 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		892993871A7B72EE00054688 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -387,17 +377,12 @@
 			files = (
 				892993971A7B72EE00054688 /* ViewController.m in Sources */,
 				892993941A7B72EE00054688 /* AppDelegate.m in Sources */,
-				892993BE1A7B73C700054688 /* TBXML+Compression.m in Sources */,
 				892993CE1A7B763200054688 /* YoutubeCell.m in Sources */,
 				892993DB1A7B788100054688 /* YoutubeItem.m in Sources */,
 				899820341A7F353B008DBBBD /* NSString+HTML.m in Sources */,
 				892993E31A7B82BB00054688 /* UIWebView+YouTube.m in Sources */,
-				892993C01A7B73C700054688 /* TBXML.m in Sources */,
-				892993BF1A7B73C700054688 /* TBXML+HTTP.m in Sources */,
 				892993DF1A7B7A6000054688 /* YoutubeDetailVC.m in Sources */,
-				892993D71A7B781900054688 /* ProgressController.m in Sources */,
 				892993911A7B72EE00054688 /* main.m in Sources */,
-				892993D51A7B781900054688 /* ProgreeView.m in Sources */,
 				899820371A7F365A008DBBBD /* GTMNSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +503,7 @@
 		};
 		892993AF1A7B72EE00054688 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15C9026B84C3399AB6237FA3 /* Pods-youtube.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = youtube/PrefixHeader.pch;
@@ -529,6 +515,7 @@
 		};
 		892993B01A7B72EE00054688 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95C21C7CB031C692E35B6FF5 /* Pods-youtube.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = youtube/PrefixHeader.pch;

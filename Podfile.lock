@@ -1,0 +1,13 @@
+PODS:
+  - MBProgressHUD (0.9)
+  - TBXML (1.5)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 0.9)
+  - TBXML (~> 1.5)
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  TBXML: a279440030ba55c40e1455cafba3b0a44e1963d4
+
+COCOAPODS: 0.35.0
